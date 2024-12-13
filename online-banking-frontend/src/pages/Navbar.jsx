@@ -30,7 +30,7 @@ import {
     );
   
     return (
-      <nav className="bg-gradient-to-r from-sky-800 to-purple-600 text-white shadow-lg top-0 z-10 relative overflow-hidden">
+      <nav className="bg-gradient-to-r from-sky-800 to-purple-600 text-white shadow-lg top-0 z-10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-baseline py-4">
             {/* Logo */}
