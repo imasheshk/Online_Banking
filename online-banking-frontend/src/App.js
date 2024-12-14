@@ -1,5 +1,6 @@
 import React from "react";
-import { Route, HashRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { AuthProvider } from "./context/AuthContext";
 import History from "./pages/History";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -8,9 +9,9 @@ import Transaction from "./pages/Transaction";
 import Navbar from "./pages/Navbar";
 
 const App = () => (
-  <>
+  <Router>
     <div className="gradient" />
-    <Router>
+    <AuthProvider>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow mx-auto w-full my-10 max-w-7xl">
@@ -28,8 +29,8 @@ const App = () => (
           </p>
         </footer>
       </div>
-    </Router>
-  </>
+    </AuthProvider>
+  </Router>
 );
 
 export default App;

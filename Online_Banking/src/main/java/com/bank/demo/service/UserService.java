@@ -81,7 +81,7 @@ public class UserService {
     }
 
     private void sendVerificationEmail(User user) {
-        String verificationLink = "http://localhost:8080/api/users/verify/" + user.getAccountNumber();
+        String verificationLink = "http://localhost:9090/api/users/verify/" + user.getAccountNumber();
 
         String emailBody = "<html><body style='font-family: Arial, sans-serif; line-height: 1.6; color: #333;'>" +
                 "<h2 style='color: #4CAF50;'>Account Verification</h2>" +
